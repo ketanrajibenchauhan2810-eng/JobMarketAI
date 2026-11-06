@@ -16,7 +16,7 @@ import {
 } from "recharts";
 import "./App.css";
 
-const api = "http://localhost:5000";
+const api = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
 const colors = [
   "#3478f6", "#8064ed", "#20b887", "#f59e0b",
